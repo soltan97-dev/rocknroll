@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & Roll Sushi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/fav" href="img/fav.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="site-header">
+          <div class="logo">
+            <img src="img/logo.png" alt="Rock n Roll Sushi Logo" />
+
+            <h1 class="h1">Rock&Roll</h1>
+          </div>
+
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+          <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="acc.html"> Аккаунт</a></li>
+            <li><a href="cart.html" class="cart-link">Корзина</a></li>
+            <li><a href="contact.html">Связь</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="parallax">
+      <div class="overlay">
+        <h2>Добро пожаловать в Rock & Roll!</h2>
+
+        <p>Почувствуйте вкус инноваций!</p>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="container">
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Items will be dynamically added -->
+          </tbody>
+        </table>
+        <div class="cart-total">
+          <h3>Total: $0.00</h3>
+          <button class="btn checkout">Checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Свяжитесь с нами</h2>
+      <p>Instagram: rockandroll_sushi_baku</p>
+      <p>Phone: +994993420545</p>
+      <p>Phone: +994553420545</p>
+      <p>Address: Bulbul pr. 60</p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+  <footer class="footer">
+    <div class="container">
+      <p></p>
+    </div>
+  </footer>
+</html>

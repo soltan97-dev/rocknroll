@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & Roll Sushi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/fav" href="img/fav.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="site-header">
+          <div class="logo">
+            <img src="img/logo.png" alt="Rock n Roll Sushi Logo" />
+
+            <h1 class="h1">Rock&Roll</h1>
+          </div>
+
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+          <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="acc.html"> Аккаунт</a></li>
+            <li><a href="cart.html" class="cart-link">Корзина</a></li>
+            <li><a href="contact.html">Связь</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="parallax">
+      <div class="overlay">
+        <h2>Добро пожаловать в Rock & Roll!</h2>
+
+        <p>Почувствуйте вкус инноваций!</p>
+      </div>
+    </section>
+    <section id="menu" class="menu-section">
+      <h2>НАШЕ МЕНЮ</h2>
+      <p>
+        Откройте для себя наши восхитительные суши, приготовленные из свежих
+        ингредиентов.
+      </p>
+
+      <div class="menu-categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="sushi-rolls">
+          Sushi Rolls
+        </button>
+        <button class="category-btn" data-category="Set">Сеты</button>
+        <button class="category-btn" data-category="Special Box">
+          Special Box
+        </button>
+        <button class="category-btn" data-category="Buritto">Буритто</button>
+        <button class="category-btn" data-category="Cake">Торты</button>
+        <button class="category-btn" data-category="Tako & Sandwich">
+          Тако и Сендвичи
+        </button>
+        <button class="category-btn" data-category="Noodles">Нудлы</button>
+        <button class="category-btn" data-category="Sup">Супы</button>
+        <button class="category-btn" data-category="Zakuski">Закуски</button>
+        <button class="category-btn" data-category="Nigiri">Нигири</button>
+        <button class="category-btn" data-category="Salad">Поке/салаты</button>
+        <button class="category-btn" data-category="Burgers">Бургеры</button>
+        <button class="category-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-items">
+        <!-- Пример блюда -->
+        <div class="menu-item" data-category="sushi-rolls">
+          <img src="img/s1.jpeg" alt="Sushi Roll" />
+          <h3>Classic Rolls</h3>
+          <p>Philadelphia Salmon</p>
+          <span>16 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="sushi-rolls">
+          <img src="img/s2.jpeg" alt="Sushi Roll" />
+          <h3>Classic Rolls</h3>
+          <p>Philadelphia Avocado</p>
+          <span>17 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="sushi-rolls">
+          <img src="img/s3.jpeg" alt="Sushi Roll" />
+          <h3>Classic Rolls</h3>
+          <p>Philadelphia Vegan</p>
+          <span>17 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="sushi-rolls">
+          <img src="img/s4.jpeg" alt="Sushi Roll" />
+          <h3>Classic Rolls</h3>
+          <p>Philadelphia Grill</p>
+          <span>16 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="sushi-rolls">
+          <img src="img/s5.jpeg" alt="Sushi Roll" />
+          <h3>Classic Rolls</h3>
+          <p>Philadelphia Cheese</p>
+          <span>12 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="sushi-rolls">
+          <img src="img/s7.jpeg" alt="Sushi Roll" />
+          <h3>Classic Rolls</h3>
+          <p>California Crab</p>
+          <span>16 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="sushi-rolls">
+          <img src="img/s6.jpeg" alt="Sushi Roll" />
+          <h3>Classic Rolls</h3>
+          <p>California Salmon</p>
+          <span>17 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- sss -->
+        <div class="menu-item" data-category="Set">
+          <img src="img/sr1.jpeg" alt="Set" />
+          <h3>Сет 1</h3>
+          <p>Philadelphia Salmon 10</p>
+          <p>Baked Roll Salmon 10</p>
+          <p>Hot Roll Salmon 10</p>
+          <p>Crispy Chicken 10</p>
+          <span>35 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Set">
+          <img src="img/sr2.jpeg" alt="Set" />
+          <h3>Сет 2</h3>
+          <p>California Crab 10</p>
+          <p>Alaska Salmon 10</p>
+          <p>Hot Roll Indeyka 10</p>
+
+          <span>29 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Set">
+          <img src="img/sr3.jpeg" alt="Set" />
+          <h3>Сет 3</h3>
+          <p>Philadelphia Lux 10</p>
+          <p>Philadelphia Avocado 10</p>
+          <p>Spicy Salmon 10</p>
+
+          <span>55 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Set">
+          <img src="img/sr4.jpeg" alt="Set" />
+          <h3>Сет 4</h3>
+          <p>Grill Crab 10</p>
+          <p>Maki Salmon 10</p>
+          <p>Crispy Chicken 10</p>
+          <span>24 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Set">
+          <img src="img/sr5.jpeg" alt="Set" />
+          <h3>Сет 5</h3>
+          <p>Red Dragon Roll 10</p>
+          <p>Green Dragon Roll 10</p>
+          <p>Baked Roll Salmon 10</p>
+          <p>Crispy Chicken 10</p>
+          <span>35 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- RRRR -->
+        <div class="menu-item" data-category="Special Box">
+          <img src="img/sb1.jpeg" alt="Drink" />
+          <h3>Set Mini</h3>
+          <p>Philadelphia Salmon 5 eded</p>
+          <p>Philadelphia Avocado 5 eded</p>
+          <p>Nigiri Salmon 1 eded</p>
+          <p>Nigiri Shrimp 1 eded</p>
+          <span>18 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Special Box">
+          <img src="img/sb2.jpeg" alt="Drink" />
+          <h3>Extra Box</h3>
+          <p>Philadelphia Salmon 10 eded</p>
+          <p>Nigiri Salmon 2 eded</p>
+          <p>Nigiri Shrimp 2 eded</p>
+          <span>23 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Special Box">
+          <img src="img/sb3.jpeg" alt="Drink" />
+          <h3>Set Salmon</h3>
+          <p>Alaska Lux 5 eded</p>
+          <p>Nigiri Salmon 3 eded</p>
+          <p>Maki Salmon 5 eded</p>
+          <p>Sashimi Lux 5 eded</p>
+          <p>Twisted Salmon Lux 3 eded</p>
+          <span>34 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Special Box">
+          <img src="img/sb4.jpeg" alt="Drink" />
+          <h3>Set "Для себя любимой"</h3>
+          <p>Philadelphia Salmon 5 eded</p>
+          <p>Nigiri Salmon 1 eded</p>
+          <p>Nigiri Shrimp 1 eded</p>
+          <p>Hot Salmon 5 eded</p>
+          <p>Hot Shrimp 5 eded</p>
+          <p>Roll Dragon 5 eded</p>
+          <span>34 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-category="Special Box">
+          <img src="img/sb5.jpeg" alt="Drink" />
+          <h3>Set "Small Box"</h3>
+          <p>Philadelphia Salmon 10</p>
+          <p>Hot Shrimp 10</p>
+          <p>California Crab 10</p>
+          <span>34 AZN</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- asasa -->
+        <div class="menu-item" data-category="drinks">
+          <img src="img/2.jpg" alt="Drink" />
+          <h3>Matcha Tea</h3>
+          <p>Refreshing green tea with a smooth finish.</p>
+          <span>$2.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Добавьте больше блюд -->
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p></p>
+      </div>
+    </footer>
+    <section id="contact">
+      <h2>Свяжитесь с нами</h2>
+      <p>Instagram: rockandroll_sushi_baku</p>
+      <p>Phone: +994993420545</p>
+      <p>Phone: +994553420545</p>
+      <p>Address: Bulbul pr. 60</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

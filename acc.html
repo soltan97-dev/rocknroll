@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & Roll Sushi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/fav" href="img/fav.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="site-header">
+          <div class="logo">
+            <img src="img/logo.png" alt="Rock n Roll Sushi Logo" />
+
+            <h1 class="h1">Rock&Roll</h1>
+          </div>
+
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+          <ul class="nav-menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="acc.html"> Аккаунт</a></li>
+            <li><a href="cart.html" class="cart-link">Корзина</a></li>
+            <li><a href="contact.html">Связь</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="parallax">
+      <div class="overlay">
+        <h2>Добро пожаловать в Rock & Roll!</h2>
+
+        <p>Почувствуйте вкус инноваций!</p>
+      </div>
+    </section>
+    <section id="order-form">
+      <div class="container">
+        <h2>Завершить заказ</h2>
+        <form id="checkoutForm">
+          <div class="form-group">
+            <label for="name">Полное имя</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер Телефона</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Адрес Доставки</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Enter your address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="comments">Дополнительные комментарии</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Дополнение к заказу"
+            ></textarea>
+          </div>
+          <button type="submit" id="placeOrder">Сделать Заказ</button>
+        </form>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: info@rocknrollsushi.com</p>
+      <p>Phone: +123 456 789</p>
+      <p>Address: 123 Sushi Street, Food City</p>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <!-- <p>&copy; 2025 Rock n Roll Sushi. All rights reserved.</p> -->
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,781 @@
+/* Основные стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #fff;
+  line-height: 1.6;
+}
+.footer {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  border-top: 1px solid #870000;
+}
+
+.container {
+  width: 90%;
+  margin: -381px;
+  max-width: 1200px;
+  height: 100%;
+}
+/* .hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+/* padding: 10px 20px;
+  color: white;
+  position: relative;
+} */
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* margin: 0 15px; */
+  position: relative;
+  overflow: hidden;
+}
+li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffbb00;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+li:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.decorative-img {
+  height: 175px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Эффект свечения при наведении */
+.decorative-img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f00;
+}
+
+/* Header */
+.header {
+  position: relative;
+  background-color: #000000;
+  padding: 10px;
+}
+.h1 {
+  font-family: auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f00;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c00;
+}
+
+/* Menu Section */
+/* .menu {
+  display: flex;
+  flex-direction: row;
+  background-color: #454545;
+  position: absolute;
+  gap: 20px; */
+/* top: 60px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px; */
+/* } */
+/* .menu li {
+  margin: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  /* font-size: 18px; */
+/* } */
+
+/* .menu.active {
+  display: flex;
+} */
+
+.menu h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #f00;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu-item {
+  width: 250px;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.menu-item h3 {
+  margin: 15px 0;
+  color: #f00;
+}
+
+/* Cart Section */
+.cart {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cart h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #f00;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.cart-table th,
+.cart-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #111;
+  color: #f00;
+}
+
+.cart-table input {
+  width: 50px;
+  text-align: center;
+}
+
+.cart-total {
+  margin-top: 20px;
+}
+
+.cart-total h3 {
+  font-size: 24px;
+  color: #f00;
+}
+.parallax {
+  background-image: url("img/7.jpg"); /* Замените на путь к вашему изображению */
+  height: 500px; /* Высота секции */
+  background-attachment: fixed; /* Эффект параллакса */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax h1 {
+  color: white;
+  text-align: center;
+  padding-top: 200px; /* Центрирование текста */
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .logo img {
+  height: 60px; /* Размер логотипа */
+  margin-right: 15px;
+}
+
+.site-header h1 {
+  font-size: 1.8rem;
+  color: red; /* Красный текст для названия */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.site-header nav ul li {
+  text-align: center;
+}
+
+.site-header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.site-header nav ul li a:hover {
+  color: red; /* Красный при наведении */
+}
+@keyframes logoGlow {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px red);
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px red);
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px red);
+  }
+}
+
+.site-header .logo img {
+  height: 60px; /* Размер логотипа */
+  margin-right: 15px;
+  animation: logoGlow 3s infinite; /* Анимация длится 3 секунды и повторяется бесконечно */
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.site-header .logo img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 20px red);
+}
+.site-header h1 {
+  font-size: 1.8rem;
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.site-header h1:hover {
+  color: white;
+  text-shadow: 0 0 10px red, 0 0 20px red;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.site-header .logo {
+  animation: fadeIn 2s ease-out;
+}
+
+#contact {
+  background-color: rgb(17, 16, 16);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#contact h2 {
+  color: red;
+  margin-bottom: 20px;
+}
+/* Стили для параллакса */
+.parallax {
+  background-image: url("img/7.jpg"); /* Замените на свой фон */
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.parallax .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.parallax h2 {
+  font-size: 2.5em;
+  margin: 0;
+  color: red;
+}
+
+.parallax p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: white;
+}
+/* Дополнительные параллакс-фоны */
+.parallax-dishes {
+  background-image: url("img/8.jpg"); /* Замените на изображение ингредиентов */
+}
+
+.parallax-experience {
+  background-image: url("img/9.jpg"); /* Замените на изображение атмосферы */
+}
+/* Анимация для текста */
+.parallax .overlay {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.parallax.visible .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-order {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-order:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#location {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #222;
+  color: white;
+}
+
+#location h2 {
+  font-size: 2em;
+  color: red;
+  margin-bottom: 20px;
+}
+.menu-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+.menu-section h2 {
+  font-size: 2.5em;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.menu-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.menu-categories {
+  margin-bottom: 30px;
+}
+
+.category-btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid red;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-btn.active,
+.category-btn:hover {
+  background-color: red;
+  color: black;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  font-size: 1.5em;
+  color: red;
+  margin: 10px 0;
+}
+
+.menu-item p {
+  font-size: 1em;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+.menu-item span {
+  display: block;
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 10px;
+}
+#order-form {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#order-form .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#order-form h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #e63946;
+}
+
+#order-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+#order-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+#order-form input,
+#order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #111;
+}
+
+#order-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#order-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#order-form button:hover {
+  background-color: #d62828;
+}
+/* Основной стиль навбара */
+.navbar {
+  list-style: none;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+.nav-menu li a:hover {
+  color: red;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 200px;
+  right: 10px;
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+.menu.active {
+  display: block;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.menu ul li {
+  margin: 10px 0;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Показываем гамбургер */
+    cursor: pointer;
+  }
+  .site-header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #111;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+  }
+  .site-header nav ul.active {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #000000;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+  }
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: none; /* Скрываем меню по умолчанию */
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 60px; /* Чтобы меню открывалось под навбаром */
+    right: 0; /* Открытие справа */
+
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    max-width: calc(100% - 20px); /* Адаптивная ширина */
+    z-index: 9; /* Поверх других элементов */
+  }
+
+  .menu.active {
+    display: flex; /* Показываем меню */
+  }
+
+  .menu ul {
+    flex-direction: column;
+    width: 100%; /* Ширина списка */
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
